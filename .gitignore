@@ -1,0 +1,22 @@
+# Maven / Gradle build
+/target/
+/build/
+
+# IDE settings
+.idea/
+*.iml
+*.ipr
+*.iws
+/.classpath
+/.project
+/.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment
+.env
