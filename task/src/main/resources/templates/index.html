@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset = "utf-8">
+    <title>Learn Web</title>
+</head>
+<body>
+    <h1>学習記録アプリ</h1>
+
+    <form th:action="@{/learn}" method ="post">
+    <p>日付：<input type="date" name="date" th:value="${#temporals.format(time,'yyyy-mm-dd')}"></p>
+    
+    <label id="cont">学習内容：
+    <textarea rows = "3" cols="80" id = "cont" th:text="${cont}">学習内容を記載してください。</textarea>
+    </label>
+
+    
+    <button type="submit">追加</button>
+    <button type="reset">削除</button>
+    </form>
+
+    
+
+</body>
+</html>
