@@ -11,7 +11,7 @@
     <p>日付：<input type="date" name="date" th:value="${#temporals.format(time,'yyyy-mm-dd')}"></p>
     
     <label id="cont">学習内容：
-    <textarea rows = "3" cols="80" id = "cont" th:text="$*{cont}">学習内容を記載してください。</textarea>
+    <textarea rows = "3" cols="80" id = "cont" th:text="${cont}">学習内容を記載してください。</textarea>
     </label>
 
     
